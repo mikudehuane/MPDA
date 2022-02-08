@@ -34,7 +34,7 @@ python scripts/preprocess/movielens/get_users_with_train_and_test.py -tfd=${trai
 
 ## Initial Model
 The initial models (cloud models) are trained via [train_global_model.py](scripts/train_global_model.py).
-The resulted models have been placed in [cloud_models](cloud_models) in the <dataset_name>_<model_name> format.
+The resulted models have been placed in [cloud_models](cloud_models) in the dataset-name_model-name format.
 
 ## Evaluation
 Run [train_global_model.py](scripts/train_global_model.py) for evaluating MPDA and the baselines.
