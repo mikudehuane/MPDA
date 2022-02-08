@@ -37,7 +37,7 @@ The initial models (cloud models) are trained via [train_global_model.py](script
 The resulted models have been placed in [cloud_models](cloud_models) in the dataset-name_model-name format.
 
 ## Evaluation
-Run [train_global_model.py](scripts/train_global_model.py) for evaluating MPDA and the baselines.
+Run [transfer.py](scripts/transfer.py) for evaluating MPDA and the baselines.
 Use --help option to show the option list.
 
 We run the scripts on the PAI platform, which itself handles parallel invocation and computation resource allocation.
