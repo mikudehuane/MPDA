@@ -39,7 +39,12 @@ The resulted models have been placed in [cloud_models](cloud_models) in the <dat
 ## Evaluation
 Run [train_global_model.py](scripts/train_global_model.py) for evaluating MPDA and the baselines.
 Use --help option to show the option list.
-The script supports parallel launching via the --task_count and --task_index options for accelerating.
+
+We run the scripts on the PAI platform, which itself handles parallel invocation and computation resource allocation.
+For other users, we here provide the commands for running in PC environment in [commands](commands).
+Each script corresponds to one run with a specific group of hyper-parameters.
+E.g., [transfer_amazon-din_m-50.sh](commands/transfer_amazon_din_m-50.sh) corresponds to the run using DIN on Amazon Electronics dataset with 50 matched users.
+For compatibility, the scripts specify CPU as the computing device, and you can change the "device" option for running on other devices.
 
 ## Visualizing
 Please run [visualize](scripts/visualize.py) to produce the files necessary for visualizing, 
