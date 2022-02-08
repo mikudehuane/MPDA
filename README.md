@@ -45,6 +45,8 @@ For other users, we here provide the commands for running in PC environment in [
 Each script corresponds to one run with a specific group of hyper-parameters.
 E.g., [transfer_amazon-din_m-50.sh](commands/transfer_amazon_din_m-50.sh) corresponds to the run using DIN on Amazon Electronics dataset with 50 matched users.
 For compatibility, the scripts specify CPU as the computing device, and you can change the "device" option for running on other devices.
+Please spread the tasks to multiple GPUs for accelerating in practice.
+The default setting in the scripts with 15 cpu tasks might cost unacceptably long time to complete.
 
 ## Visualizing
 Please run [visualize](scripts/visualize.py) to produce the files necessary for visualizing, 
