@@ -1,5 +1,8 @@
 Public dataset evaluation for MPDA.
 
+## Dependencies
+See [requirements.txt](scripts/requirements.txt) for the dependent pip packages.
+
 ## Data Preprocess
 First, please download the raw data from https://files.grouplens.org/datasets/movielens/ml-20m.zip 
 and http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Electronics_5.json.gz.
